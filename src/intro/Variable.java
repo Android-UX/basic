@@ -30,7 +30,6 @@ public class Variable {
 
         System.out.println(c1);
 
-
         System.out.println(bool);
     }
 }
