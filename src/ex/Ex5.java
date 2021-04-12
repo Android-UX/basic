@@ -12,7 +12,7 @@ public class Ex5 {
         double ave = 0.0;//平均を初期化
 
         //各値を見つける
-        for (int value:array) {
+        for (int value:array) {//valueは配列を一つずつ取り出す
             if (max<value) max = value;//最大値の更新
             if (min>value) min = value;//最小値の更新
             sum += value;//合計の計算
