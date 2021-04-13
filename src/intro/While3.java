@@ -8,7 +8,7 @@ public class While3 {
         System.out.println("パスワードを入力してください");
         String str = in.nextLine();//キーボード入力
 
-        while(!"abc".equals(str)){
+        while(!"abc".equals(str)){//.equals(str)はメソッド "abc"は定数　必ず最初に書く　必ずあるから
             System.out.println("パスワードが違います");
             str = in.nextLine();
         }
