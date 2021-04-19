@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 //finalのサンプル
 class SuperClass {
@@ -11,7 +11,7 @@ class SuperClass {
     }
 }
 
-//SuperClassを継承したSub1を作成 finalがつくと継承不可になる
+//SuperClassを継承したSub1を作成 finalがつくと継承不可になる extendsは継承
 final class Sub1 extends SuperClass {
 //SuperClassからフィールドとメソッドを継承
 

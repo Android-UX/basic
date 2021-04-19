@@ -1,4 +1,4 @@
-package ObjectSample;
+package objectSample;
 
 class Student {
     //フィールド　データを記憶する場所　情報を保存
