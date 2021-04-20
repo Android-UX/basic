@@ -1,7 +1,7 @@
-package ex.ex7;
+package ex.ex8;
 
-public class Circle extends Figure{
-    private double radius;//半径
+class Circle implements IfGetArea {
+    private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -9,7 +9,7 @@ public class Circle extends Figure{
 
     @Override
     public double getArea() {
-        return Math.PI * Math.pow(radius,2);//Mathクラスの中にstaticメソッドのインスタンス（パイとパワー）が存在している
+        return Math.PI * Math.pow(radius,2);
     }
 
     @Override

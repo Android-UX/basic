@@ -4,6 +4,4 @@ package ex.ex7;
 abstract public class Figure {
     //長方形・円・三角形のクラスのスーパークラス
     public abstract double getArea();
-
-
 }
