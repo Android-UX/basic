@@ -2,6 +2,7 @@ package objectSample.equalsSample;
 
 import java.util.Objects;
 
+//暗黙の継承
 class Sample {
     private String keyword;
 
