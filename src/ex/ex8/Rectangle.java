@@ -1,5 +1,6 @@
 package ex.ex8;
 
+//長方形クラス　継承はいらないメソッドまでサブクラスに継承する　　
 class Rectangle implements IfGetArea {
     private double height;//高さ
     private double width;//幅
