@@ -15,7 +15,7 @@ class Sample {
     }
 
     @Override
-    //どんな型でも受け入れるObject型　自分とこの型を比較する
+    //どんな型でも受け入れるObject型クラスで定義する　自分とこの型を比較する
     public boolean equals(Object o) {
         if (this == o) return true;//オブジェクトが同一である
         if (!(o instanceof Sample)) return false;//クラスが異なるので不一致
@@ -24,6 +24,7 @@ class Sample {
         return Objects.equals(getKeyword(), sample.getKeyword());
     }
 
+    //先に計算するメソッド
     @Override
     public int hashCode() {
         return Objects.hash(getKeyword());

@@ -3,7 +3,7 @@ package objectSample.equalsSample;
 //オブジェクトの比較について
 class EqualsSample {
     public static void main(String[] args) {
-        Sample sample1 = new Sample("abc");
+        Sample sample1 = new Sample("abc");//Sampleクラスのコンストラクタ　材料から仕上げる　メインで処理して記述する　一度作ったプログラムをひな型にできる
         Sample sample2 = sample1;
         Sample sample3 = new Sample("def");
         Sample sample4 = new Sample("abc");
