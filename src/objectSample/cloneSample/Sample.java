@@ -31,6 +31,7 @@ class Sample implements Cloneable {
     }
 
     @Override
+    //1.protectedをpublicに変更する　2.オブジェクト型を自分自身の型に変更
     public Sample clone()  {
         Sample clone = null;
         try {
