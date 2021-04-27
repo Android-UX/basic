@@ -62,7 +62,5 @@ class ArrayList1 {
 
         //空かどうか？　空っぽなら true
         System.out.println(list.isEmpty());//true
-
-
     }
 }
