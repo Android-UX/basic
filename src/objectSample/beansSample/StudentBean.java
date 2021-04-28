@@ -1,7 +1,8 @@
-package ex.ex10;
+package objectSample.beansSample;
 
-class Student {
-
+//beanのサンプル
+public class StudentBean {
+    //フィールドはprivate
     private String name;
     private int grade;
     private int cl;
@@ -10,45 +11,67 @@ class Student {
     private int math;
     private int eng;
 
-    public Student(String name, int grade, int cl, int no, int jap, int math, int eng) {
-        this.name = name;
-        this.grade = grade;
-        this.cl = cl;
-        this.no = no;
-        this.jap = jap;
-        this.math = math;
-        this.eng = eng;
-    }
+    //引数なしのコンストラクタ
+    public StudentBean(){}
 
+    //ゲッターとセッターを作成する
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getGrade() {
         return grade;
     }
 
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
     public int getCl() {
         return cl;
+    }
+
+    public void setCl(int cl) {
+        this.cl = cl;
     }
 
     public int getNo() {
         return no;
     }
 
+    public void setNo(int no) {
+        this.no = no;
+    }
+
     public int getJap() {
         return jap;
+    }
+
+    public void setJap(int jap) {
+        this.jap = jap;
     }
 
     public int getMath() {
         return math;
     }
 
+    public void setMath(int math) {
+        this.math = math;
+    }
+
     public int getEng() {
         return eng;
     }
 
-    @Override//プログラミングの結果を確認するためにtoStringメソッドを使うのを癖にする
+    public void setEng(int eng) {
+        this.eng = eng;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s %d %d %2d %3d %3d %3d %3d %.2f",
                 name,grade,cl,no,jap,math,eng,getSum(),getAve());
