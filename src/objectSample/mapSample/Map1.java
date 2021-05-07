@@ -20,6 +20,43 @@ class Map1 {
         //entrySet()はひとつの組み合わせを取り出す　for文で一対ずつ取り出している
         for (Map.Entry<String,String> entry:map.entrySet()){
             System.out.println(entry.getKey() + ":" + entry.getValue());
+
+            //keyを指定して取得
+            System.out.println(map.get("Apple"));//りんご
+            System.out.println(map.get("abc"));//存在しなければnull
+
+            //Keyが存在することを確認してからgetする　検索のために使う　データベースみたいな使い方
+            if (map.containsKey("Apple")) {
+                System.out.println(map.get("Apple"));
+            }else {
+                System.out.println("Key:Appleは存在しません");
+            }
+
+            //値の存在を調べる
+            String word = "りんご";
+            if (map.containsValue((word))) {
+                System.out.println(word + "は存在します");
+            }else {
+                System.out.println(word + "は存在しません");
+            }
         }
-    }
+
+        //値の変更
+        System.out.println(map);
+        System.out.println(map.put("Apple", "リンゴ"));//以前の値を返す
+        System.out.println(map);
+
+        //Keyの集合を取得 Keyはset構造
+        System.out.println(map.keySet());//[Apple, Orange, Banana]
+
+        //値のコレクションを取得 Listインターフェースで返ってくる
+        System.out.println(map.values());
+
+        //Keyを指定して値の削除
+        String key = "Apple";
+        if (map.containsKey(key)) {
+            map.remove(key);
+        }
+        System.out.println(map);
+    }//データの追加・修正・削除の３つができればいい
 }
