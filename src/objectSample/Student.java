@@ -16,6 +16,8 @@ class Student {
         this.no = no;
     }
 
+
+
     //ゲッター　データを取得するメソッド
     public String getName() {
         return name;

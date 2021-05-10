@@ -2,7 +2,7 @@ package objectSample.setSample;
 
 import java.util.*;
 
-//Setサンプル
+//Setサンプル　教科書と一緒に見る　p140
 class Set1 {
     public static void main(String[] args) {
         //整数型HashSetを定義
