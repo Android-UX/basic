@@ -5,10 +5,10 @@ import java.util.List;
 
 class Ex131 {
     public static void main(String[] args) {
-        Branch branch = new Branch("アップフロント");
-        System.out.println(branch.getName());
-        List<Employee> employees = branch.getEmployees();
-        for (Employee employee:employees) {
+        Branch branch = new Branch("モーニング娘`21 15期");//新しい営業所を作る
+        System.out.println(branch.getName());//名前を出す
+        List<Employee> employees = branch.getEmployees();//getterで従業員リストを取得している
+        for (Employee employee:employees) {//3人分の売上を出す
             System.out.println(
                     employee + " " + employee.getAllSales() +
                             " " + employee.getSum() +
@@ -21,11 +21,11 @@ class Ex131 {
         for (Employee employee:employees) {
             sum+=employee.getSum();
         }
-        System.out.println("支店合計の表示");
+        System.out.println("15期合計の表示");
         System.out.println(branch.getName() + ":" + sum);
 
         //支店の上位３名の表示
-        System.out.println("支店売上TOP3");
+        System.out.println("15期売上TOP3");
         employees.sort(Comparator.comparing(Employee::getSum,Comparator.reverseOrder()));
         for (int i = 0; i < 3; i++) {
             System.out.println(employees.get(i).getName() + ":" +

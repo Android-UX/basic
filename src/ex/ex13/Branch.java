@@ -3,6 +3,7 @@ package ex.ex13;
 import java.util.ArrayList;
 import java.util.List;
 
+//支店営業所クラス　従業員クラスを包括する
 class Branch {
     private String name;
     private List<Employee> employees = new ArrayList<>();

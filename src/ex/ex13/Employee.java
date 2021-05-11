@@ -11,7 +11,7 @@ class Employee {
     private int age;
     private List<Integer> sales = new ArrayList<>(12);
 
-    //イニシャライザ　インスタンスを作成時に実行される　初期化する　12か月分を0で追加する
+    //イニシャライザ　インスタンスを作成時に実行される　初期化する　12か月分を0で追加する 参照型はnullが入ってる　準備する
     {
         sales.addAll(Arrays.asList(0,0,0,0,0,0,0,0,0,0,0,0));
     }
