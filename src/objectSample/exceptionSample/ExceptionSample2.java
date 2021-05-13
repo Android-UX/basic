@@ -7,7 +7,7 @@ class ExceptionSample2 {
         try {
             System.out.println(str1.length());
             System.out.println(str2.length());//実行時例外が発生
-        }catch (NullPointerException e){
+        } catch (NullPointerException e){
             e.printStackTrace();//どのメソッドで発生したか追跡する
             System.out.println("例外が発生しました");
         }

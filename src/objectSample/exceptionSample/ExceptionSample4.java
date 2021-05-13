@@ -12,7 +12,7 @@ class ExceptionSample4 {
     public static void main(String[] args) {
         //ファイルの読み込みの準備
         Path in = Paths.get("src","objectSample","exceptionSample","src.txt");//文字列がパッケージと同じか確かめる
-        Path out = Paths.get("src","objectSample","exceptionSample","dist.txt");
+        Path out = Paths.get("src","objectSample","exceptionSample","dist.txt");//Pathは情報資源の場所
 
         try (BufferedReader br = Files.newBufferedReader(in);
              BufferedWriter bw = Files.newBufferedWriter(out)) {

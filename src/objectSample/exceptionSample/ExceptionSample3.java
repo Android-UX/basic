@@ -2,7 +2,7 @@ package objectSample.exceptionSample;
 
 //例外をスローするメソッドの書き方
 class ExceptionSample3 {
-    public static int getLength(String word) throws Exception{
+    public static int getLength(String word) throws Exception{//throws Exceptionはダメ　具象クラスを書くべき　,で複数の例外を書ける
         try {
             return  word.length();
         }catch (Exception e) {
