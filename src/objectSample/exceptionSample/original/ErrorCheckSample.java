@@ -8,16 +8,16 @@ class ErrorCheckSample {
 
         //名前のチェック
         if (name != null) {
-            if(name.isEmpty() || name.length() > 10) nameError = true;
+            if(name.isEmpty() || name.length() > 10) nameError = true;//空っぽ（stringクラスのメソッド　未入力1文字も入っていない）// か10文字以上だったらnameError// 　妥当性チェック
         } else {
             nameError = true;
         }
 
         //年齢のチェック
-        if(age < 0 || age > 120) ageError = true;
+        if(age < 0 || age > 120) ageError = true;//0才未満で120歳以上だったらtrue
 
         //例外のスロー
-        if (nameError || ageError) {
+        if (nameError || ageError) {//名前か年齢にエラーがあった場合
             throw new CreateDataException(nameError, ageError);
         }
         //例外でなければDateインスタンスを返す
@@ -27,7 +27,7 @@ class ErrorCheckSample {
     public static void main(String[] args) {
         //外部からフィールドの値を入力されたイメージで処理をする
 
-        boolean hasError = false;//入力にエラーがあればtrue
+        boolean hasError = false;//入力にエラーがあればtrue　変数を理解する　上から読む　理解したら書き換える
         Data data = null;//Dataインスタンスの保存用
 
         //入力処理
@@ -44,7 +44,7 @@ class ErrorCheckSample {
             //検証して問題なければインスタンス作成　コンストラクタだとチェックできないから
             try {
                 data = createData(name,gender,age);
-                hasError = false;
+                hasError = false;//falseだと繰り返しを中止する
             } catch (CreateDataException e) {//作成時例外があれば
                 if (e.isNameError()) System.out.println("名前の文字数が不正です");
                 if (e.isAgeError()) System.out.println("年齢の値が不正です");
