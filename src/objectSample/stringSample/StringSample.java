@@ -138,8 +138,23 @@ class StringSample {
         }
 
         //Unicodeのコードポイントを返す
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Integer.html#toHexString(int)
         System.out.println(Integer.toHexString("ABC".codePointAt(0)));//41
         System.out.println(Integer.toHexString("ABC".codePointAt(1)));//42
 
+        //キーワードが何回含まれるか調べる
+        int fromIndex = 0,count = 0, find = -1;
+        while (fromIndex < word.length()) {
+            find = word.indexOf(key, fromIndex);//検索
+            if (find >= 0) {
+                count++;//文字列をカウント
+                fromIndex = find + key.length();//検索の開始位置を更新
+            }else {
+                break;
+            }
+        }
+        System.out.println("探索対象:" + word);
+        System.out.println("キーワード:" + key);
+        System.out.println("発見した個数:" + count);
     }
 }
