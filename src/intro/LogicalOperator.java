@@ -19,7 +19,7 @@ public class LogicalOperator {
         System.out.println("t || t " + (t || t));//
 
         //否定(NOT)
-        System.out.println("!f " + (!f));//false
+        System.out.println("!f " + (!f));//true
         System.out.println("!t " + (!t));//false
 
         //演算結果は？
