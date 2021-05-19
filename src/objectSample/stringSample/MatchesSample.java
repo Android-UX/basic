@@ -9,7 +9,7 @@ class MatchesSample {
         //基本的な正規表現比較
         String sentence1 = "This is a pen.";//検索対象
         String sentence2 = "That is a pen.";//検索対象
-        String regex = "This is a .*\\.";//正規表現
+        String regex = "This is a .*\\.";//正規表現 this is a までが固定　最後がピリオドで終わるもの
         System.out.println(sentence1.matches(regex));//true
         System.out.println(sentence2.matches(regex));//false
 
