@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
+//フィールドの設計　どんなデータが必要か列挙する　そのクラス自身が誕生日を計算する mainじゃ結びつきが
 class Person {
     private String name;
     private Gender gender;
@@ -31,7 +32,7 @@ class Person {
         this.birth = LocalDate.parse(birth);
     }
     /*
-        getter
+        getter　get欲しいもの
         名前は文字列で、性別は「男 or 女」
         誕生日は 2005/02/15
         getAge()は年齢を取得できる 16
