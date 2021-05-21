@@ -16,5 +16,10 @@ class DateTimeSample2 {
         System.out.println(someDateTime.getMinute());//0
         System.out.println(someDateTime.getSecond());//0
         System.out.println(someDateTime.getNano());//0
+        System.out.println(someDateTime.getDayOfYear());//329　その1年のうちの何日目か？　正月から何日経ってるか
+        System.out.println(someDateTime.getDayOfMonth());//25　その月で何日目か？
+        System.out.println(someDateTime.getDayOfWeek());//WEDNESDAY その週の何曜日か？
+        System.out.println(someDateTime.getDayOfWeek().getValue());//3 1 (月曜日)から7 (日曜日)まで番号付けされます
+
     }
 }

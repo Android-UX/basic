@@ -9,14 +9,14 @@ import java.time.Month;
 class DateTimeSample1 {
     //現在日時 p274　ツイッターとかでつぶやく場合
     public static void main(String[] args) {
-        LocalDate nowDate = LocalDate.now();
-        LocalTime nowTime = LocalTime.now();
-        LocalDateTime nowDateTime = LocalDateTime.now();
+        LocalDate nowDate = LocalDate.now();//日付
+        LocalTime nowTime = LocalTime.now();//時刻
+        LocalDateTime nowDateTime = LocalDateTime.now();//日時
         System.out.println(nowDate);//年　月　日
         System.out.println(nowTime);//時　分　秒　ナノ秒
         System.out.println(nowDateTime);//上の二つを出す
 
-        //任意の日時を指定　直接入力する場合
+        //任意の日時を指定　直接入力する場合　入力フォームならこれが使いやすい
         LocalDate someDate = LocalDate.of(1981,11,25);
         LocalTime someTime = LocalTime.of(18,0,0);
         LocalDateTime someDateTime = LocalDateTime.of(1981, Month.NOVEMBER,25,18,0,0);
