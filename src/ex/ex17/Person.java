@@ -64,7 +64,7 @@ class Person {
     }
 
     /**
-     * 年齢を所得する　インターフェースの知識が必要になる
+     * 年齢を取得する　インターフェースの知識が必要になる
      * @return 年齢 Long
      */
     public Long getAge() {

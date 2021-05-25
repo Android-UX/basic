@@ -10,6 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 //CSV→Personのインスタンス
@@ -31,7 +32,7 @@ class DataConvert {
         }
         for (String line:readData) System.out.println(line);
 
-        //文字列→Personのインスタンス
+        //文字列→Personのインスタンス Mapping　関連付ける　紐づける
         List<Person> personList = new ArrayList<>();
 
         for (String line:readData){
@@ -53,5 +54,13 @@ class DataConvert {
             Person person = new Person(name,gender,birth);
             personList.add(person);
         }
+        //ArrayListを作成して処理できるようにする
+        for (Person p:personList) System.out.println(p);
+
+        //年齢の降順でソート
+        personList.sort(Comparator.comparing(Person::getAge, Comparator.reverseOrder()));
+
+        System.out.println("年齢の降順");
+        for (Person p:personList) System.out.println(p);
     }
 }
