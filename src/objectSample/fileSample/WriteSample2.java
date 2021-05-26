@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//このやり方で書くと言い　一行ずつ処理　この間にいろいろ別のものを差し込みできる
 class WriteSample2 {
     public static void main(String[] args) {
         List<String> data = new ArrayList<>();
