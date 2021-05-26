@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-//テキストファイルの読み込みその２　教科書の例 p235の上のソースが重要
+//テキストファイルの読み込みその２　教科書の例 p235の上のソースが重要　重要
 class ReadSample2 {
     public static void main(String[] args) {
         Path path = Paths.get("src","objectSample","fileSample","input.csv");

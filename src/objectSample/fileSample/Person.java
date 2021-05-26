@@ -4,6 +4,7 @@ import objectSample.exceptionSample.original.Gender;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 class Person {
@@ -33,6 +34,12 @@ class Person {
     public String toString() {
         return String.format("%s,%s,%s,%d",
                 name,gender.getName(),birth,getAge());
+    }
+
+    public String toCsv(){
+        return String.join(",",
+                name, gender.getName(),
+                DateTimeFormatter.ofPattern("yyyy-MM-dd").format(birth));
     }
 
     /**
